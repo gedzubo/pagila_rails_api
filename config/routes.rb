@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  namespace :admin do
+  namespace :api do
     resources :stores, only: [:index, :show]
     resources :rentals, only: [:index, :show]
     resources :payments, only: [:index, :show]
