@@ -1,3 +1,4 @@
 class StoreSerializer < ActiveModel::Serializer
-  attributes :id
+  belongs_to :manager_staff
+  belongs_to :address
 end

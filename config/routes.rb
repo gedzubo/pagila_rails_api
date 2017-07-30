@@ -11,5 +11,7 @@ Rails.application.routes.draw do
     resources :categories, only: [:index, :show]
     resources :addresses, only: [:index, :show]
     resources :actors, only: [:index, :show]
+    resources :films, only: [:index, :show]
+    resources :staff, only: [:index, :show]
   end
 end

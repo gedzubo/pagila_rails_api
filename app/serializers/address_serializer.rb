@@ -1,5 +1,5 @@
 class AddressSerializer < ActiveModel::Serializer
-  attributes :first_address_line, :second_address_line, :district, :postal_code
+  attributes :first_address_line, :second_address_line, :district, :postal_code, :phone
 
   def first_address_line
     object.address

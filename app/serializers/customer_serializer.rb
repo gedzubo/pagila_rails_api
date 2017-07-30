@@ -5,6 +5,10 @@ class CustomerSerializer < ActiveModel::Serializer
     object.create_date
   end
 
+  def active
+    object.activebool
+  end
+
   belongs_to :store
   belongs_to :address
 end
